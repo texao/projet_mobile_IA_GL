@@ -1,20 +1,12 @@
 plugins {
-    id 'java'
+    id "org.sonarqube" version "4.0.0.2929" // Assurez-vous de vérifier la version la plus récente
 }
 
-group = 'com.example'
-version = '1.0-SNAPSHOT'
-
-repositories {
-    mavenCentral()
-}
-
-dependencies {
-    implementation 'org.springframework.boot:spring-boot-starter'
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
-    testImplementation 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
-}
-
-test {
-    useJUnitPlatform()
+sonarqube {
+    properties {
+        property "sonar.projectKey", "texao_projet_mobile_IA_GL"
+        property "sonar.organization", "texao" // Si applicable
+        property "sonar.host.url", "https://sonarcloud.io" // URL du serveur SonarQube
+        property "sonar.login", System.getenv("ec5006257ed704c666342efeab803c3c6a1174a0") // Token d'accès (assurez-vous qu'il est dans vos variables d'environnement)
+    }
 }
