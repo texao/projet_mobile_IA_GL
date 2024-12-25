@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/btnBack"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/fleche_retour"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="Retour"
+        android:padding="10dp"/>
+
+
+    <Button
+        android:id="@+id/btnViewStudentProgress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Voir les progrès de l'élève" />
+
+    <Button
+        android:id="@+id/btnViewCourses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Voir les cours de l'élève" />
+
+    <Button
+        android:id="@+id/btnSetReminder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Définir un rappel" />
+
+    <Button
+        android:id="@+id/btnViewRecommendations"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Voir les recommandations" />
+</LinearLayout>
